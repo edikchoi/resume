@@ -12,4 +12,10 @@ $(document).ready(function() {
             $(this).find('.info:first').addClass('develop');
         };
     });
+
+    var total = 0;
+    $('.career-wrap .info-wrap').each(function() {
+        total += parseInt($(this).attr('month'));
+    });
+    $('.total').text('경력: ' + parseInt(total / 12) + '년 ' + total % 12 + '개월' );
 });

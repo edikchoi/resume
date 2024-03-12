@@ -1,40 +1,29 @@
 @media print {
-    @page {
-        size: auto;  /* auto is the initial value */
-        margin: 0;  /* this affects the margin in the printer settings */
-    }
-
-    .devider-wrap {
-        display: none;
-    }
+    @page { size: auto; margin: 60px 0; }
+    body { background-color: #fff !important; }
+    .print-wrap { padding: 0 60px !important; }
+    .devider-wrap { display: none; }
 }
 
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css");
 
 body { padding: 0; margin: 0; background-color: lightgray; }
-p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard-Regular'; padding: 0; margin: 0; text-decoration: none; letter-spacing: -0.4px; }
+p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard GOV Variable'; padding: 0; margin: 0; text-decoration: none; letter-spacing: -0.4px; }
 .wrap { position: relative; width: 794px; background-color: #fff; overflow: hidden; }
-.print-wrap { width: 794px; padding: 30px 20px; margin: 0; box-sizing: border-box; overflow: hidden; }
+.print-wrap { width: 794px; padding: 60px 60px; margin: 0; box-sizing: border-box; overflow: hidden; }
 .print-wrap h1 { margin-bottom: 100px; }
-.devider-wrap { position: absolute; top: 0; left: 0; width: 794px; }
-.devider { width: 100%; height: 1123px; }
-.devider + .devider { border-top: 1px dashed #999; }
-
-.career-wrap { display: flex; padding-top: 20px; margin-top: 20px; border-top: 1px solid #000; }
-.career-wrap .tit { width: 100px; font-weight: 700; }
+.career-wrap { display: flex; padding-top: 20px; margin-top: 30px; border-top: 1.8px solid #999; }
+.career-wrap .tit { width: 100px; font-weight: 500; }
 .career-wrap .career-area { flex: 1; }
-.career-wrap .career-area .info-wrap .info:first-of-type { font-weight: 700; }
+.career-wrap .career-area .info-wrap .info:first-of-type { margin-bottom: 12px; }
+.career-wrap .career-area .info-wrap .info:first-of-type p:first-of-type { font-weight: 700; }
+.career-wrap .career-area .info-wrap .info:not(:first-of-type) { font-size: 14px; }
 .career-wrap .info-wrap + .info-wrap { padding-top: 20px; margin-top: 20px; border-top: 1px solid #999; }
-.info-wrap .info { display: flex; position: relative; justify-content: space-between; align-items: center; font-weight: 300; }
+.info-wrap .info { display: flex; position: relative; justify-content: space-between; align-items: center; font-weight: 400; }
 .info-wrap .info.new { margin-left: 36px; }
-.info-wrap .info.new::before { content: '구축'; position: absolute; left: -36px; padding: 2px 4px; background-color: royalblue; border-radius: 4px; color: #fff; font-size: 12px; }
+.info-wrap .info.new::before { content: '구축'; position: absolute; left: -36px; padding: 2px 4px; border: 1px solid royalblue; border-radius: 4px; color: royalblue; font-size: 12px; font-weight: 500; }
 .info-wrap .info.manage { margin-left: 36px; }
-.info-wrap .info.manage::before { content: '운영'; position: absolute; left: -36px; padding: 2px 4px; background-color: green; border-radius: 4px; color: #fff; font-size: 12px; }
+.info-wrap .info.manage::before { content: '운영'; position: absolute; left: -36px; padding: 2px 4px; border: 1px solid green; border-radius: 4px; color: green; font-size: 12px; font-weight: 500; }
 .info-wrap .info.develop { margin-left: 36px; }
-.info-wrap .info.develop::before { content: '개선'; position: absolute; left: -36px; padding: 2px 4px; background-color: tomato; border-radius: 4px; color: #fff; font-size: 12px; }
+.info-wrap .info.develop::before { content: '개선'; position: absolute; left: -36px; padding: 2px 4px; border: 1px solid tomato; border-radius: 4px; color: tomato; font-size: 12px; font-weight: 500; }
 .info-wrap .info + .info { margin-top: 6px; }
