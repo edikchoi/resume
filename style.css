@@ -19,7 +19,7 @@
 body { padding: 0; margin: 0; background-color: lightgray; }
 p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard-Regular'; padding: 0; margin: 0; text-decoration: none; letter-spacing: -0.4px; }
 .wrap { position: relative; width: 794px; background-color: #fff; overflow: hidden; }
-.print-wrap { width: 794px; padding: 30px 15px; margin: 0; box-sizing: border-box; overflow: hidden; }
+.print-wrap { width: 794px; padding: 30px 20px; margin: 0; box-sizing: border-box; overflow: hidden; }
 .print-wrap h1 { margin-bottom: 100px; }
 .devider-wrap { position: absolute; top: 0; left: 0; width: 794px; }
 .devider { width: 100%; height: 1123px; }
@@ -29,6 +29,12 @@ p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard-Regular'; 
 .career-wrap .tit { width: 100px; font-weight: 700; }
 .career-wrap .career-area { flex: 1; }
 .career-wrap .career-area .info-wrap .info:first-of-type { font-weight: 700; }
-.career-wrap .info-wrap + .info-wrap { padding-top: 30px; margin-top: 30px; border-top: 1px solid #999; }
-.info-wrap .info { display: flex; justify-content: space-between; font-weight: 300; }
+.career-wrap .info-wrap + .info-wrap { padding-top: 20px; margin-top: 20px; border-top: 1px solid #999; }
+.info-wrap .info { display: flex; position: relative; justify-content: space-between; align-items: center; font-weight: 300; }
+.info-wrap .info.new { margin-left: 36px; }
+.info-wrap .info.new::before { content: '구축'; position: absolute; left: -36px; padding: 2px 4px; background-color: royalblue; border-radius: 4px; color: #fff; font-size: 12px; }
+.info-wrap .info.manage { margin-left: 36px; }
+.info-wrap .info.manage::before { content: '운영'; position: absolute; left: -36px; padding: 2px 4px; background-color: green; border-radius: 4px; color: #fff; font-size: 12px; }
+.info-wrap .info.develop { margin-left: 36px; }
+.info-wrap .info.develop::before { content: '개선'; position: absolute; left: -36px; padding: 2px 4px; background-color: tomato; border-radius: 4px; color: #fff; font-size: 12px; }
 .info-wrap .info + .info { margin-top: 6px; }
