@@ -5,10 +5,10 @@
     .devider-wrap { display: none; }
 }
 
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 body { padding: 0; margin: 0; background-color: lightgray; }
-p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard GOV Variable'; padding: 0; margin: 0; text-decoration: none; letter-spacing: -0.4px; }
+p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; padding: 0; margin: 0; text-decoration: none; letter-spacing: -0.4px; }
 .wrap { position: relative; width: 794px; background-color: #fff; overflow: hidden; }
 .print-wrap { width: 794px; padding: 60px 60px; margin: 0; box-sizing: border-box; overflow: hidden; }
 .print-wrap h1 { margin-bottom: 100px; }
@@ -21,12 +21,12 @@ p, a, button, span, h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard GOV Variab
 .career-wrap .career-area .info-wrap .info:first-of-type p:first-of-type { font-weight: 700; }
 .career-wrap .career-area .info-wrap .info:not(:first-of-type) { font-size: 14px; }
 .career-wrap .career-area .info-wrap + .info-wrap { padding-top: 20px; margin-top: 20px; border-top: 1px solid #999; }
-.career-wrap .career-area .info-wrap .info.new { margin-left: 36px; }
-.career-wrap .career-area .info-wrap .info.new::before { content: '구축'; position: absolute; left: -36px; padding: 2px 4px; border: 1px solid royalblue; border-radius: 4px; color: royalblue; font-size: 12px; font-weight: 500; }
-.career-wrap .career-area .info-wrap .info.manage { margin-left: 36px; }
-.career-wrap .career-area .info-wrap .info.manage::before { content: '운영'; position: absolute; left: -36px; padding: 2px 4px; border: 1px solid green; border-radius: 4px; color: green; font-size: 12px; font-weight: 500; }
-.career-wrap .career-area .info-wrap .info.develop { margin-left: 36px; }
-.career-wrap .career-area .info-wrap .info.develop::before { content: '개선'; position: absolute; left: -36px; padding: 2px 4px; border: 1px solid tomato; border-radius: 4px; color: tomato; font-size: 12px; font-weight: 500; }
+.career-wrap .career-area .info-wrap .info.new { margin-left: 40px; }
+.career-wrap .career-area .info-wrap .info.new::before { content: '구축'; position: absolute; left: -40px; padding: 2px 4px; border: 1px solid royalblue; border-radius: 4px; color: royalblue; font-size: 12px; font-weight: 500; }
+.career-wrap .career-area .info-wrap .info.manage { margin-left: 40px; }
+.career-wrap .career-area .info-wrap .info.manage::before { content: '운영'; position: absolute; left: -40px; padding: 2px 4px; border: 1px solid green; border-radius: 4px; color: green; font-size: 12px; font-weight: 500; }
+.career-wrap .career-area .info-wrap .info.develop { margin-left: 40px; }
+.career-wrap .career-area .info-wrap .info.develop::before { content: '개선'; position: absolute; left: -40px; padding: 2px 4px; border: 1px solid tomato; border-radius: 4px; color: tomato; font-size: 12px; font-weight: 500; }
 .career-wrap .career-area .info-wrap .info + .info { margin-top: 6px; }
 .career-wrap .career-area .info-wrap .info p.app::after { content: ' | App'; }
 .career-wrap .career-area .info-wrap .info p.web::after { content: ' | Web'; }
