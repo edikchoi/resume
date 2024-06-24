@@ -16,7 +16,7 @@ body { padding: 0; margin: 0; background-color: lightgray; }
 p, a, button, span, h1, h2, h3, h4, h5, h6, ul, li { font-family: 'Pretendard-Regular'; padding: 0; margin: 0; text-decoration: none; letter-spacing: -0.4px; }
 .wrap { position: relative; width: 794px; background-color: #fff; overflow: hidden; }
 .print-wrap { width: 794px; padding: 60px 60px; margin: 0; box-sizing: border-box; overflow: hidden; }
-.print-wrap h1 { margin-bottom: 100px; }
+.print-wrap h1 { margin-bottom: 0px; }
 .info-wrap .info { display: flex; position: relative; justify-content: space-between; align-items: center; font-weight: 400; }
 .profile-wrap .info-wrap .info + .info { margin-top: 6px; }
 /* .career-wrap { display: flex; padding-top: 20px; margin-top: 30px; border-top: 1.8px solid #999; }
